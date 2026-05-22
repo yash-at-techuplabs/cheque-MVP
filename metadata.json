@@ -1,0 +1,6 @@
+{
+  "name": "Cheque OCR Benchmark",
+  "description": "A benchmarking tool to compare extraction quality and latency between Gemini 3.1 Flash-Lite and Gemini 3.5 Flash for chewing OCR.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
