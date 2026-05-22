@@ -176,27 +176,27 @@ export default function Page() {
   };
 
   return (
-    <div className="min-h-screen bg-neutral-50 text-neutral-800 font-sans p-6 md:p-12 overflow-x-hidden">
-      <div className="max-w-6xl mx-auto space-y-8">
-
-        <header className="space-y-4">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 bg-[#FF4E00] text-white rounded-sm shadow-sm flex items-center justify-center font-bold text-xl">
-              C
+    <div className="min-h-screen bg-neutral-50 text-neutral-800 font-sans p-6 md:p-12 overflow-x-hidden flex flex-col">
+      <div className="max-w-6xl mx-auto w-full flex flex-col flex-1">
+        <div className="flex-1 space-y-8">
+          <header className="space-y-4">
+            <div className="flex items-center gap-4">
+              <div className="w-12 h-12 bg-[#FF4E00] text-white rounded-sm shadow-sm flex items-center justify-center font-bold text-xl">
+                C
+              </div>
+              <h1 className="text-3xl font-serif italic tracking-tight text-neutral-900 flex items-center gap-3">
+                ChequeMind
+                <span className="text-neutral-500 font-sans not-italic text-[10px] px-2 py-1 border border-neutral-300 rounded uppercase tracking-[0.2em] transform translate-y-[2px] bg-white">Scanner</span>
+              </h1>
             </div>
-            <h1 className="text-3xl font-serif italic tracking-tight text-neutral-900 flex items-center gap-3">
-              ChequeMind
-              <span className="text-neutral-500 font-sans not-italic text-[10px] px-2 py-1 border border-neutral-300 rounded uppercase tracking-[0.2em] transform translate-y-[2px] bg-white">Scanner</span>
-            </h1>
-          </div>
-          <p className="text-neutral-500 text-sm max-w-xl leading-relaxed">
-            Upload a cheque image to automatically extract the payee name, date, and transaction amounts.
-          </p>
-        </header>
+            <p className="text-neutral-500 text-sm max-w-xl leading-relaxed">
+              Upload a cheque image to automatically extract the payee name, date, and transaction amounts.
+            </p>
+          </header>
 
-        <main className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-8">
+          <main className="grid grid-cols-1 lg:grid-cols-[1fr_1.5fr] gap-8">
 
-          <section className="space-y-6 flex flex-col">
+            <section className="space-y-6 flex flex-col">
             <div className="bg-white p-6 lg:p-8 rounded-xl border border-neutral-200 shadow-sm">
               <h2 className="text-xs uppercase tracking-[0.3em] text-[#FF4E00] mb-6 font-semibold flex items-center gap-2">
                 <Upload className="w-3.5 h-3.5 text-[#FF4E00]"/> Image Upload
@@ -300,6 +300,20 @@ export default function Page() {
           </section>
 
         </main>
+        </div>
+
+        <footer className="shrink-0 pt-10 pb-4 text-center text-[14px] text-neutral-500">
+          Developed by AI Agency, a{" "}
+          <a
+            href="https://www.techuplabs.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline-offset-2 text-neutral-900 decoration-neutral-400/70 hover:text-neutral-700 hover:decoration-neutral-500"
+          >
+            TechUp Labs
+          </a>{" "}
+          business.
+        </footer>
       </div>
     </div>
   );
