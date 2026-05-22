@@ -6,3 +6,9 @@ coverage/
 *.log
 .env*
 !.env.example
+
+# Next.js
+.next/
+next-env.d.ts
+out/
+
